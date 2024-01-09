@@ -1,5 +1,5 @@
 import { describe, it } from '@serenity-js/playwright-test';
-import { validateSearchFunction } from "../../src/tasks/search"
+import { validateSearchPositiveResult, validateSearchNegativeResult } from "../../src/tasks/search"
 import config from "../../config/config"
 
 describe('Navigate to Wikipedia web site', () => {
@@ -8,7 +8,8 @@ describe('Navigate to Wikipedia web site', () => {
 
         it('Should see a result from the search', async ({ actor }) => {
             await actor.attemptsTo(
-                validateSearchFunction());
+                validateSearchPositiveResult(),
+                validateSearchNegativeResult());
         });
     })
 });
