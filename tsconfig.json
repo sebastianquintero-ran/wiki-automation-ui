@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "lib": [
+      "ES2019",
+      "dom"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "mocha"
+    ]
+  },
+
+  "include": [
+    "src/**/*.ts",
+    "features/**/*.ts"
+  ],
+
+  "exclude": [
+    "node_modules"
+  ]
+}
